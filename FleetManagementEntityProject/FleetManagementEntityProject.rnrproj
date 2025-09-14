@@ -33,12 +33,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="EDT Strings\" />
+    <Folder Include="Tables\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AxEdt\String1">
       <SubType>Content</SubType>
       <Name>String1</Name>
       <Link>EDT Strings\String1</Link>
+    </Content>
+    <Content Include="AxTable\Table1">
+      <SubType>Content</SubType>
+      <Name>Table1</Name>
+      <Link>Tables\Table1</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
