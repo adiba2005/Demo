@@ -1,0 +1,10 @@
+# Ignore Visual Studio cache, build, and user-specific files
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+*.pdb
+*.db
