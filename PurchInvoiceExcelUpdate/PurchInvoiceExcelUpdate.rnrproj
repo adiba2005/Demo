@@ -34,6 +34,7 @@
   <ItemGroup>
     <Folder Include="Classes\" />
     <Folder Include="Form Extensions\" />
+    <Folder Include="Table Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AxClass\PurchInvoiceExcelProcessor">
@@ -41,10 +42,20 @@
       <Name>PurchInvoiceExcelProcessor</Name>
       <Link>Classes\PurchInvoiceExcelProcessor</Link>
     </Content>
+    <Content Include="AxClass\PurchTable_ValidateWrite_Extension">
+      <SubType>Content</SubType>
+      <Name>PurchTable_ValidateWrite_Extension</Name>
+      <Link>Classes\PurchTable_ValidateWrite_Extension</Link>
+    </Content>
     <Content Include="AxFormExtension\PurchTable.Contoso_PurchInvoiceExtensions">
       <SubType>Content</SubType>
       <Name>PurchTable.Contoso_PurchInvoiceExtensions</Name>
       <Link>Form Extensions\PurchTable.Contoso_PurchInvoiceExtensions</Link>
+    </Content>
+    <Content Include="AxTableExtension\PurchTable.Contoso_PurchInvoiceExtensions">
+      <SubType>Content</SubType>
+      <Name>PurchTable.Contoso_PurchInvoiceExtensions</Name>
+      <Link>Table Extensions\PurchTable.Contoso_PurchInvoiceExtensions</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
