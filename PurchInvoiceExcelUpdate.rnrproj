@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>Contoso_PurchInvoiceExtensions</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <DeployOnline>False</DeployOnline>
+    <ProjectGuid>{0e3f169e-e46a-4440-abd9-0de75d65c621}</ProjectGuid>
+    <Name>PurchInvoiceExcelUpdate</Name>
+    <RootNamespace>PurchInvoiceExcelUpdate</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>True</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Form Extensions\" />
+    <Folder Include="Menu Extensions\" />
+    <Folder Include="Output Menu Items\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Table Extensions\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\PurchInvoiceExcelProcessor">
+      <SubType>Content</SubType>
+      <Name>PurchInvoiceExcelProcessor</Name>
+      <Link>Classes\PurchInvoiceExcelProcessor</Link>
+    </Content>
+    <Content Include="AxClass\PurchOpenOrderContract">
+      <SubType>Content</SubType>
+      <Name>PurchOpenOrderContract</Name>
+      <Link>Classes\PurchOpenOrderContract</Link>
+    </Content>
+    <Content Include="AxClass\PurchOpenOrderController">
+      <SubType>Content</SubType>
+      <Name>PurchOpenOrderController</Name>
+      <Link>Classes\PurchOpenOrderController</Link>
+    </Content>
+    <Content Include="AxClass\PurchOpenOrderProvider">
+      <SubType>Content</SubType>
+      <Name>PurchOpenOrderProvider</Name>
+      <Link>Classes\PurchOpenOrderProvider</Link>
+    </Content>
+    <Content Include="AxClass\PurchTable_ValidateWrite_Extension">
+      <SubType>Content</SubType>
+      <Name>PurchTable_ValidateWrite_Extension</Name>
+      <Link>Classes\PurchTable_ValidateWrite_Extension</Link>
+    </Content>
+    <Content Include="AxFormExtension\PurchTable.Contoso_PurchInvoiceExtensions">
+      <SubType>Content</SubType>
+      <Name>PurchTable.Contoso_PurchInvoiceExtensions</Name>
+      <Link>Form Extensions\PurchTable.Contoso_PurchInvoiceExtensions</Link>
+    </Content>
+    <Content Include="AxMenuExtension\AccountsPayable.Contoso_PurchInvoiceExtensions">
+      <SubType>Content</SubType>
+      <Name>AccountsPayable.Contoso_PurchInvoiceExtensions</Name>
+      <Link>Menu Extensions\AccountsPayable.Contoso_PurchInvoiceExtensions</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\PurchOpenOrder">
+      <SubType>Content</SubType>
+      <Name>PurchOpenOrder</Name>
+      <Link>Output Menu Items\PurchOpenOrder</Link>
+    </Content>
+    <Content Include="AxReport\PurchOpenOrderReport">
+      <SubType>Content</SubType>
+      <Name>PurchOpenOrderReport</Name>
+      <Link>Reports\PurchOpenOrderReport</Link>
+    </Content>
+    <Content Include="AxTableExtension\PurchTable.Contoso_PurchInvoiceExtensions">
+      <SubType>Content</SubType>
+      <Name>PurchTable.Contoso_PurchInvoiceExtensions</Name>
+      <Link>Table Extensions\PurchTable.Contoso_PurchInvoiceExtensions</Link>
+    </Content>
+    <Content Include="AxTable\Customers">
+      <SubType>Content</SubType>
+      <Name>Customers</Name>
+      <Link>Tables\Customers</Link>
+    </Content>
+    <Content Include="AxTable\PurchOpenOrderTemp">
+      <SubType>Content</SubType>
+      <Name>PurchOpenOrderTemp</Name>
+      <Link>Tables\PurchOpenOrderTemp</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.17.0.targets" />
+</Project>

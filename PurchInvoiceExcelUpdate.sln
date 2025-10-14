@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "PurchInvoiceExcelUpdate (USR) [Contoso_PurchInvoiceExtensions]", "PurchInvoiceExcelUpdate.rnrproj", "{0E3F169E-E46A-4440-ABD9-0DE75D65C621}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E3F169E-E46A-4440-ABD9-0DE75D65C621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E3F169E-E46A-4440-ABD9-0DE75D65C621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C498CDFB-E801-4E2E-9AC1-64001E1D2489}
+	EndGlobalSection
+EndGlobal
